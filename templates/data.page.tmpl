@@ -1,0 +1,47 @@
+{{template "base" .}}
+
+
+{{define "content"}}
+
+<h1>Book A Room</h1>
+
+
+<div class="container" >
+    <form method="post" action="/data">
+        <div class="mb-3">
+          <label for="first_name" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="first_name" name="first_name">
+          
+        </div>
+        <div class="mb-3">
+          <label for="last_name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last_name" name="last_name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" name="email">
+            <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="start_date" class="form-label">Starting Data</label>
+            <input type="date" class="form-control" id="start_date" name="start_date">
+          </div>
+          <div class="mb-3">
+            <label for="end_date" class="form-label">Ending Data</label>
+            <input type="date" class="form-control" id="end_date" name="end_date">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+
+
+
+
+
+
+{{end}}
